@@ -1,0 +1,90 @@
+<div class = "body-container">
+  <div class ="bg-container mb-3">
+
+    <div class = "gradient"></div>
+    <app-header></app-header>
+
+    <div class = "box  d-flex flex-column justify-content-center align-items-center h-100  ">
+      <h1 class = "heading">Unlimited Movies, TV shows and more.</h1>
+      <p class = "sub-heading">Watch anywhere. Cancel anytime.</p>
+      <div>
+        <p >Ready to watch?Enter your email to create or restart your membership.</p>
+        <div class = "d-flex flex-row justify-content-center form-1">
+          <form [formGroup]="form">
+          <input type="email"  formControlName="email" class="form-control input-box" id="exampleFormControlInput1" placeholder="Email address">
+        </form>
+            <button class = "btn  button1 " (click) = "checkEmail()">
+              Get Started
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+              </svg>
+            </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div>
+        <section class = "bg-card1 d-flex flex-row justify-content-center">
+          <div class = "card-text col-md-5 m-auto ">
+              <h1 class = "card-heading mb-3">Enjoy on your TV.</h1>
+              <h3 class = "card-subHeading">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+          </div>
+          <div class = "card-media col-md-6">
+              <img src = "../assets/tv.png"  class = ".img shadow"/>
+              <video class="our-story-card-video" data-uia="our-story-card-video" autoplay="true"
+               playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+               type="video/mp4" class = ".video"></video>
+          </div>
+        </section>
+        <section class = " mt-2 bg-card1 d-flex flex-row justify-content-center pb-5" >
+          <div class = "card-text d-flex flex-column justify-content-center col-md-5 order-md-2">
+            <h1 class = "card-heading mb-3">Download your shows to watch offline.</h1>
+            <h3 class = "card-subHeading">Save your favourites easily and always have something to watch.</h3>
+          </div>
+
+          <div class = "card-media col-md-5 order-md-1">
+              <img src = "../assets/1.jpg" alt = "mobile Image">
+            </div>
+              <div class = "Download-card-img d-flex flex-row justify-content-center">
+                  <img alt="" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" class = "">
+                    <h5>Stranger Things
+                      <span class = "Download-span">Downloading...</span>
+                    </h5>
+
+                    <img src = "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif">
+
+              </div>
+        </section>
+
+        <section class = "bg-card1 d-flex flex-row justify-content-center align-items-center mt-2 pb-4">
+          <div class = "card-text col-md-5">
+            <h1 class = "card-heading mb-3">Watch everywhere.</h1>
+            <p class = "card-subHeading">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+          </div>
+          <div class = "card-media3 col-md-5 pt-3">
+            <img src = "../assets/device-pile-in.png" class = "card-img">
+              <video class="card-video" data-uia="our-story-card-video"
+              autoplay="true" playsinline="" muted="" loop=""><source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+              type="video/mp4">
+              </video>
+          </div>
+        </section>
+
+        <section class = "bg-card1 d-flex flex-row justify-content-center align-items-center mt-2 pb-4">
+          <div class = "card-text order-md-2 col-md-5">
+            <h1 class = "card-heading mb-3">Create profiles for children.</h1>
+            <h3 class = "card-subHeading">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+          </div>
+          <div class = "card-media order-md-1 col-md-5">
+              <img src = "../assets/last-children.png" class = "shadow-md"/>
+          </div>
+        </section>
+
+  </div>
+
+  <app-frequent-questions></app-frequent-questions>
+
+  <app-footer></app-footer>
+</div>

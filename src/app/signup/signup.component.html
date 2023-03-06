@@ -1,0 +1,55 @@
+
+<div class = "bg-box">
+  <div class = "gradient-img">
+  </div>
+  <app-header></app-header>
+  <div class="main">
+    <div class="login">
+      <form class = "form-box text-center" [formGroup]="signUpForm" (ngSubmit)="submitData()">
+        <div class = "d-flex flex-column justify-content-center login-box">
+          <label for="chk" aria-hidden="true" class = "mb-4 text-white" >Sign up</label>
+
+          <!-- UserName -->
+            <input type="text" formControlName="userName" name="txt" placeholder="Username"  class = "userName " >
+
+          <!-- user name error -->
+          <div *ngIf="userName.invalid && (userName.touched || userName.dirty)">
+            <span class = "error " *ngIf = "userName.errors?.required">* UserName is Required...</span>
+            <span class = "error " *ngIf = "userName.errors?.pattern">* Enter Only Characters</span>
+          </div>
+          <!-- user name error -->
+
+            <input type="email" formControlName="email" name="email" placeholder="Email" class = "mt-4 email">
+
+            <!-- email error -->
+            <div *ngIf = "email.invalid && (email.touched || email.dirty)">
+                <span class = "error" *ngIf = "email.errors?.required">Email Id is Required.</span>
+                <span class = "error" *ngIf = "email.errors?.email">Enter Valid Email Address.</span>
+            </div>
+
+             <input type="password" formControlName="password" name="password" placeholder="Password" class = "mt-4 password">
+              <div *ngIf = "password.invalid && (password.touched || password.dirty)" >
+                <span class = "error" *ngIf = "signUpForm.get('password').errors.required">password is Required</span>
+                <span class = "error" *ngIf = "signUpForm.get('password').errors.minlength">password is minlength is 6 Required</span>
+                <span class = "error" *ngIf = "password.errors?.maxLength">password is maxlength is 10 Required</span>
+            </div>
+
+            <input type="tel" formControlName="mobileNumber" name="mobileNumber" placeholder="mobileNumber"  class = "userName mt-4 mb-4 ">
+            <div *ngIf = "mobileNumber.invalid && (mobileNumber.touched || mobileNumber.dirty)">
+              <span class = "error" *ngIf = "mobileNumber.errors?.required">Mobile Number is Required.</span>
+              <span class = "error" *ngIf = "mobileNumber.errors?.pattern">Enter valid number.</span>
+
+            </div>
+
+          <button class = "btn  button mt-4 " [disabled]= "signUpForm.valid">Sign Up</button>
+        </div>
+      </form>
+    </div>
+
+</div>
+</div>
+
+
+
+<!-- [(ngModel)]="signupObj.userName"  [disabled]="signUpForm"-->
+

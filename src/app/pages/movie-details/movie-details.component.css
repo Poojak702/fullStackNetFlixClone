@@ -1,0 +1,31 @@
+.box-container h1,p
+{
+  color : white;
+}
+img
+{
+  width: 100%;
+  height: auto;
+}
+h1
+{
+  font-weight: bold;
+}
+p
+{
+  font-size : 14px;
+}
+a{
+  background-color: #E50914;
+  color: #ffffff;
+  font-size : 20px;
+  text-decoration: none;
+  max-width: 200px;
+  
+}
+a:hover{
+  background-color: #E50914;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+

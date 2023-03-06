@@ -1,0 +1,48 @@
+body{
+  color : white;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+nav
+{
+  color :white;
+}
+li{
+  margin-left: 20px;
+}
+.button-nav{
+  background-color: #e50914;
+  border-radius: 2px;
+  width : 100px;
+   box-shadow : 1 px;
+   font-weight: 400;
+   font-size : 15px;
+   padding: 7px;
+}
+.lang{
+  background : transparent;
+  color: white;
+  padding: 7px 17px;
+  position: relative;
+}
+.icon svg{
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.English-button
+{
+  font-size: 15px;
+}
+
+.btn-search
+{
+ background-color:  #e50914;
+ color : white;
+ font-size: 15px;
+ width: 100px;
+ padding: 6px;
+ border-radius: 0px;
+}
